@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+    <div class="nav-links">
+        <a href="../alunos/alunos.html">Alunos</a>
+        <a href="../professores/professores.html">Professores</a>
+        <a href="../cursos/cursos.html">Cursos</a>
+    </div>
+    <a href="../login/index.html" class="nav-sair" title="Sair do sistema">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+        </svg>
+        Sair
+    </a>
+</nav>
+    <h1>Cadastro de Alunos</h1>
+    <form id="form_aluno">
+    <div class="input_aluno">
+        <input type="text" id="name_aluno" name="name" placeholder="Nome do Aluno" required>
+    </div>
+    <div class="input_aluno">
+        <input type="email" id="email_aluno" name="email" placeholder="Email do Aluno" required>
+    </div>
+    <div class="input_aluno">
+        <input type="text" id="cpf_aluno" name="cpf" placeholder="CPF do Aluno" required>
+    </div>
+    <button type="submit" id="btn_aluno">Criar Aluno</button>
+    </form>
+    <div id="alterar"></div>
+    <div id="p_aluno"></div>
+</body>
+<script src="scriptAlunos.js"></script>
+</html>
