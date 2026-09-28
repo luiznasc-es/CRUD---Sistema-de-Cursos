@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+    <div class="nav-links">
+        <a href="../alunos/alunos.html">Alunos</a>
+        <a href="../professores/professores.html">Professores</a>
+        <a href="../cursos/cursos.html">Cursos</a>
+    </div>
+    <a href="../login/index.html" class="nav-sair" title="Sair do sistema">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+        </svg>
+        Sair
+    </a>
+</nav>
+    <h1>Cadastro de Cursos</h1>
+
+    <form id="formCurso">
+        <input type="text" id="nomeCurso" placeholder="Nome do curso">
+        <input type="text" id="professorCurso" placeholder="Professor">
+        <label for="dataInicioCurso">Data de início do curso</label>
+        <input type="date" id="dataInicioCurso">
+        <label for="dataFimCurso">Data de fim do curso</label>
+        <input type="date" id="dataFimCurso">
+        <button id="btnSalvarCurso">Salvar curso</button>
+    </form>
+    <div id="alterar"></div>
+    <p id="listaCursos"></p>
+</body>
+<script src="scriptCursos.js"></script>
+</html>
